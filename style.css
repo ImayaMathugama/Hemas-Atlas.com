@@ -1,0 +1,85 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("brand-atlas-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Container for the entire page */
+.div1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling the Logo */
+.image1 {
+    width: 100px;  /* Adjust the size for responsiveness */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Styling the Navigation */
+.ol1 {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Allows the items to wrap on smaller screens */
+}
+
+.li1 {
+    margin: 10px 0;
+}
+
+.li1 a:link {
+    
+    color: black;
+    font-weight: bold;
+}
+
+.li a:hover{
+    color: paleturquoise;
+}
+
+/* Content Section (Image and Text) */
+.image2, .image3, .image4 {
+    width: 100%;         /* Make images responsive */
+    max-width: 500px;     /* Restrict maximum size */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.label1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: wheat;
+}
+
+.p2 {
+    font-size: 18px;
+    margin: 20px;
+    text-align: left;
+}
+
+/* Responsive Media Queries */
+@media only screen and (max-width: 600px) {
+    /* Adjust layout for smaller screens */
+    .ol1 {
+        flex-direction: column;
+    }
+
+    .label1 {
+        font-size: 20px;
+    }
+
+    .p2 {
+        font-size: 16px;
+    }
+}
